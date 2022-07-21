@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning the Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hello, Forms!</h1>
+
+    <form action="/form-handling-url" method="post">
+        <fieldset>
+
+            <legend id="add-user">Add User</legend>
+            <img src="./Images/tiny.png" alt="aA image" class="pic">
+
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" id="firstName" name="first-name">
+            </div>
+
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last-name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email-address">
+            </div>
+
+            <div>
+                <label for="role">Status</label>
+                <select name="user-role-name" id="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="date">Current date</label>
+                <input type="date" id="expiration" name="date">
+            </div>
+
+            <div id="lang">
+                <p>Choose your favorite programming language.</p>
+            </div>
+
+            <span>
+                <div>
+                    <label class="radio" for="html">HTML</label>
+                    <input type="radio" id="html" name="program" value="html" checked>
+                </div>
+
+                <div>
+                    <label class="radio" for="css">CSS</label>
+                    <input type="radio" id="css" name="program" value="css">
+                </div>
+
+                <div>
+                    <label class="radio" for="js">Javascript</label>
+                    <input type="radio" id="js" name="program" value="js">
+                </div>
+            </span>
+
+            <div class="comments">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+
+            <div>
+                <label class="this" for="newsletter">Sign up for news letter</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+            </div>
+
+            <div>
+                <label class="this" for="terms">Agree to terms and conditions</label>
+                <input type="checkbox" id="terms" name="terms">
+            </div>
+
+            <div>
+                <button class="button" id="button1" type="submit">Submit</button>
+            </div>
+
+            <div>
+                <button class="button" id="button2" type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
