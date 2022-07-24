@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
+    <script type="text/javascript">
+
+        function doFisrt() {
+            document.write("I am first" + "</br>");
+        }
+
+        function doSecond() {
+            document.write("I am second" + "</br>");
+        }
+
+        function start() {
+            doFisrt();
+            doSecond();
+        }
+
+        console.log(start());
+
+    </script>
+
+
+
+
+
+
 <body>
     <h1>Hello, Forms!</h1>
 
@@ -71,15 +96,19 @@
                 <textarea name="comments" id="comments"></textarea>
             </div>
 
+            <span>
             <div>
-                <label class="this" for="newsletter">Sign up for news letter</label>
-                <input type="checkbox" id="newsletter" name="newsletter">
+                <label class="box" for="newsletter">Sign up for news letter</label>
+                <input class="box" type="checkbox" id="newsletter" name="newsletter">
+
             </div>
 
             <div>
-                <label class="this" for="terms">Agree to terms and conditions</label>
-                <input type="checkbox" id="terms" name="terms">
+                <label class="box" for="terms">Agree to terms and conditions</label>
+                <input class="box" type="checkbox" id="terms" name="terms">
+
             </div>
+            </span>
 
             <div>
                 <button class="button" id="button1" type="submit">Submit</button>
